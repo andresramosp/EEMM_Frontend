@@ -1,0 +1,15 @@
+// Archivo para overrides del theme
+
+@forward '@ods/ods-plus/theme-onesait/src/common/var.scss' with (
+  $border-radius: (
+    'small': '12px',
+    'base': '16px',
+    'medium': '20px',
+    'large': '24px',
+  ),
+  $alert-colors: (
+    'info': (
+      'bg': aqua,
+    ),
+  )
+);

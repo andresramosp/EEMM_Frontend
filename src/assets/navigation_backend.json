@@ -1,0 +1,1626 @@
+{
+  "status": "success",
+  "error": null,
+  "data": [
+    {
+      "idMenu": 1,
+      "idParent": 0,
+      "order": 0,
+      "title": "ADMIN",
+      "level": "M",
+      "icon": "dashboard",
+      "childs": [
+        {
+          "idMenu": 2,
+          "idParent": 1,
+          "order": 10,
+          "title": "Entity",
+          "linkMethod": "Entity",
+          "level": "P",
+          "childs": [
+            {
+              "idMenu": 3,
+              "idParent": 2,
+              "order": 100,
+              "title": "ENTITY_NEW",
+              "level": "B"
+            },
+            {
+              "idMenu": 119,
+              "idParent": 2,
+              "order": 100,
+              "title": "UPDATE_ENTITY",
+              "linkMethod": "EntitiesUpdate",
+              "level": "N"
+            },
+            {
+              "idMenu": 120,
+              "idParent": 2,
+              "order": 100,
+              "title": "CREATE_ENTITY",
+              "linkMethod": "Create-entity",
+              "level": "N"
+            },
+            {
+              "idMenu": 4,
+              "idParent": 2,
+              "order": 101,
+              "title": "ENTITY_EDIT_MOD",
+              "level": "B"
+            },
+            {
+              "idMenu": 5,
+              "idParent": 2,
+              "order": 102,
+              "title": "ENTITY_EDIT_NEW",
+              "level": "B"
+            },
+            {
+              "idMenu": 6,
+              "idParent": 2,
+              "order": 103,
+              "title": "ENTITY_EDIT_COPY",
+              "level": "B"
+            },
+            {
+              "idMenu": 7,
+              "idParent": 2,
+              "order": 104,
+              "title": "ENTITY_DISABLE",
+              "level": "B"
+            },
+            {
+              "idMenu": 8,
+              "idParent": 2,
+              "order": 105,
+              "title": "ENTITY_ADD_REL",
+              "level": "B"
+            },
+            {
+              "idMenu": 9,
+              "idParent": 2,
+              "order": 107,
+              "title": "ENTITY_DISABLE_REL",
+              "level": "B"
+            },
+            {
+              "idMenu": 10,
+              "idParent": 2,
+              "order": 108,
+              "title": "ENTITY_HISTORIC_REL",
+              "level": "B"
+            }
+          ]
+        },
+        {
+          "idMenu": 11,
+          "idParent": 1,
+          "order": 20,
+          "title": "User",
+          "linkMethod": "User",
+          "level": "P",
+          "childs": [
+            {
+              "idMenu": 121,
+              "idParent": 11,
+              "order": 100,
+              "title": "CREATE_USER",
+              "linkMethod": "AddUser",
+              "level": "N"
+            },
+            {
+              "idMenu": 122,
+              "idParent": 11,
+              "order": 100,
+              "title": "UPDATE_USER",
+              "linkMethod": "UpdateUser",
+              "level": "N"
+            },
+            {
+              "idMenu": 125,
+              "idParent": 11,
+              "order": 100,
+              "title": "ADD_USER",
+              "level": "B"
+            }
+          ]
+        },
+        {
+          "idMenu": 12,
+          "idParent": 1,
+          "order": 30,
+          "title": "Profile",
+          "linkMethod": "Profile",
+          "level": "P",
+          "childs": [
+            {
+              "idMenu": 126,
+              "idParent": 12,
+              "order": 100,
+              "title": "ADD_PROFILE",
+              "level": "B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "idMenu": 13,
+      "idParent": 0,
+      "order": 1,
+      "title": "OPERATION",
+      "level": "M",
+      "icon": "central-point",
+      "childs": [
+        {
+          "idMenu": 55,
+          "idParent": 13,
+          "order": 0,
+          "title": "GlobalPosition",
+          "linkMethod": "GlobalPosition",
+          "level": "P",
+          "childs": [
+            {
+              "idMenu": 127,
+              "idParent": 55,
+              "order": 100,
+              "title": "ADD_GLOBAL_POS",
+              "level": "B"
+            },
+            {
+              "idMenu": 319,
+              "idParent": 55,
+              "order": 100,
+              "title": "ADD_FILE",
+              "level": "B"
+            }
+          ]
+        },
+        {
+          "idMenu": 25,
+          "idParent": 13,
+          "order": 1,
+          "title": "ProgramManagement",
+          "linkMethod": "ProgramManagement",
+          "level": "O",
+          "icon": "central-point",
+          "childs": [
+            {
+              "idMenu": 411,
+              "idParent": 25,
+              "order": 20,
+              "title": "OperationData",
+              "linkMethod": "OperationData",
+              "level": "P",
+              "icon": "central-point",
+              "childs": [
+                {
+                  "idMenu": 611,
+                  "idParent": 411,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                }
+              ]
+            },
+            {
+              "idMenu": 28,
+              "idParent": 25,
+              "order": 30,
+              "title": "Availability",
+              "linkMethod": "Availability",
+              "level": "P",
+              "childs": [
+                {
+                  "idMenu": 130,
+                  "idParent": 28,
+                  "order": 100,
+                  "title": "ADD_AVAILABILITY",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 325,
+                  "idParent": 28,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 356,
+                  "idParent": 28,
+                  "order": 100,
+                  "title": "SEND_AVAILABILITY",
+                  "level": "B"
+                }
+              ]
+            },
+            {
+              "idMenu": 400,
+              "idParent": 25,
+              "order": 40,
+              "title": "Unavailability",
+              "linkMethod": "Unavailability",
+              "level": "P",
+              "childs": [
+                {
+                  "idMenu": 401,
+                  "idParent": 400,
+                  "order": 100,
+                  "title": "ADD_AVAILABILITY",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 402,
+                  "idParent": 400,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 403,
+                  "idParent": 400,
+                  "order": 100,
+                  "title": "SEND_AVAILABILITY",
+                  "level": "B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "idMenu": 14,
+          "idParent": 13,
+          "order": 20,
+          "title": "DailyMarket",
+          "linkMethod": "DailyMarket",
+          "level": "O",
+          "idMarket": 1,
+          "childs": [
+            {
+              "idMenu": 16,
+              "idParent": 14,
+              "order": 100,
+              "title": "Configuration",
+              "linkMethod": "Configuration",
+              "level": "P",
+              "idMarket": 1,
+              "childs": [
+                {
+                  "idMenu": 67,
+                  "idParent": 16,
+                  "order": 100,
+                  "title": "CONF_SAVE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 321,
+                  "idParent": 16,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                }
+              ]
+            },
+            {
+              "idMenu": 15,
+              "idParent": 14,
+              "order": 200,
+              "title": "Offer",
+              "linkMethod": "Offer",
+              "level": "P",
+              "idMarket": 1,
+              "childs": [
+                {
+                  "idMenu": 239,
+                  "idParent": 15,
+                  "order": 1,
+                  "title": "ACCEPT_OFFER",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 20,
+                  "idParent": 15,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 21,
+                  "idParent": 15,
+                  "order": 100,
+                  "title": "OFFER_REM_BLOQUE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 22,
+                  "idParent": 15,
+                  "order": 100,
+                  "title": "OFFER_ADD_BLOCK",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 23,
+                  "idParent": 15,
+                  "order": 100,
+                  "title": "OFFER_SEND",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 24,
+                  "idParent": 15,
+                  "order": 100,
+                  "title": "OFFER_GEN_ALGORIT",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 320,
+                  "idParent": 15,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                }
+              ]
+            },
+            {
+              "idMenu": 17,
+              "idParent": 14,
+              "order": 300,
+              "title": "NominationDesg",
+              "linkMethod": "NominationDesg",
+              "level": "P",
+              "idMarket": 11,
+              "childs": [
+                {
+                  "idMenu": 61,
+                  "idParent": 17,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 62,
+                  "idParent": 17,
+                  "order": 100,
+                  "title": "OFFER_GEN_ALGORIT",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 63,
+                  "idParent": 17,
+                  "order": 100,
+                  "title": "OFFER_SEND",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 322,
+                  "idParent": 17,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "idMenu": 29,
+          "idParent": 13,
+          "order": 30,
+          "title": "Bilateral",
+          "linkMethod": "Bilateral",
+          "level": "O",
+          "childs": [
+            {
+              "idMenu": 30,
+              "idParent": 29,
+              "order": 100,
+              "title": "DesgES",
+              "linkMethod": "Nomination",
+              "level": "P",
+              "idMarket": 8,
+              "childs": [
+                {
+                  "idMenu": 74,
+                  "idParent": 30,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 76,
+                  "idParent": 30,
+                  "order": 100,
+                  "title": "OFFER_SEND",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 326,
+                  "idParent": 30,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 282,
+                  "idParent": 30,
+                  "order": 200,
+                  "title": "OFFER_CANCEL_SEND",
+                  "level": "B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "idMenu": 31,
+          "idParent": 13,
+          "order": 40,
+          "title": "intraDayMarket",
+          "linkMethod": "IntraDayMarket",
+          "level": "O",
+          "idMarket": 2,
+          "childs": [
+            {
+              "idMenu": 32,
+              "idParent": 31,
+              "order": 100,
+              "title": "Configuration",
+              "linkMethod": "Configuration",
+              "level": "P",
+              "idMarket": 2,
+              "childs": [
+                {
+                  "idMenu": 68,
+                  "idParent": 32,
+                  "order": 100,
+                  "title": "CONF_SAVE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 327,
+                  "idParent": 32,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                }
+              ]
+            },
+            {
+              "idMenu": 33,
+              "idParent": 31,
+              "order": 200,
+              "title": "Offer",
+              "linkMethod": "Offer",
+              "level": "P",
+              "idMarket": 2,
+              "childs": [
+                {
+                  "idMenu": 240,
+                  "idParent": 33,
+                  "order": 1,
+                  "title": "ACCEPT_OFFER",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 56,
+                  "idParent": 33,
+                  "order": 100,
+                  "title": "OFFER_ADD_BLOCK",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 57,
+                  "idParent": 33,
+                  "order": 100,
+                  "title": "OFFER_GEN_ALGORIT",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 58,
+                  "idParent": 33,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 59,
+                  "idParent": 33,
+                  "order": 100,
+                  "title": "OFFER_REM_BLOQUE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 60,
+                  "idParent": 33,
+                  "order": 100,
+                  "title": "OFFER_SEND",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 328,
+                  "idParent": 33,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                }
+              ]
+            },
+            {
+              "idMenu": 34,
+              "idParent": 31,
+              "order": 300,
+              "title": "NominationDesg",
+              "linkMethod": "NominationDesg",
+              "level": "P",
+              "idMarket": 12,
+              "childs": [
+                {
+                  "idMenu": 64,
+                  "idParent": 34,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 65,
+                  "idParent": 34,
+                  "order": 100,
+                  "title": "OFFER_GEN_ALGORIT",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 66,
+                  "idParent": 34,
+                  "order": 100,
+                  "title": "OFFER_SEND",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 329,
+                  "idParent": 34,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "idMenu": 35,
+          "idParent": 13,
+          "order": 50,
+          "title": "XBID",
+          "linkMethod": "XBID",
+          "level": "O",
+          "idMarket": 3,
+          "childs": [
+            {
+              "idMenu": 36,
+              "idParent": 35,
+              "order": 100,
+              "title": "Offer",
+              "linkMethod": "OfferXBID",
+              "level": "P",
+              "idMarket": 3,
+              "childs": [
+                {
+                  "idMenu": 123,
+                  "idParent": 36,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 124,
+                  "idParent": 36,
+                  "order": 100,
+                  "title": "OFFER_SEND",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 330,
+                  "idParent": 36,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 357,
+                  "idParent": 36,
+                  "order": 100,
+                  "title": "CANCEL_MIC",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 358,
+                  "idParent": 36,
+                  "order": 200,
+                  "title": "SEND_MIC",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 359,
+                  "idParent": 36,
+                  "order": 300,
+                  "title": "SAVE_SEND_MIC",
+                  "level": "B"
+                }
+              ]
+            },
+            {
+              "idMenu": 112,
+              "idParent": 35,
+              "order": 300,
+              "title": "Desg",
+              "linkMethod": "NominationDesg",
+              "level": "P",
+              "idMarket": 21,
+              "childs": [
+                {
+                  "idMenu": 114,
+                  "idParent": 112,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 115,
+                  "idParent": 112,
+                  "order": 100,
+                  "title": "OFFER_SEND",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 344,
+                  "idParent": 112,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "idMenu": 37,
+          "idParent": 13,
+          "order": 60,
+          "title": "Restrictions",
+          "linkMethod": "Restrictions",
+          "level": "O",
+          "idMarket": 9,
+          "childs": [
+            {
+              "idMenu": 38,
+              "idParent": 37,
+              "order": 100,
+              "title": "Configuration",
+              "linkMethod": "ConfigurationRestriction",
+              "level": "P",
+              "idMarket": 9,
+              "childs": [
+                {
+                  "idMenu": 131,
+                  "idParent": 38,
+                  "order": 100,
+                  "title": "ADD_CONF_REST",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 179,
+                  "idParent": 38,
+                  "order": 100,
+                  "title": "CONF_SAVE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 331,
+                  "idParent": 38,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                }
+              ]
+            },
+            {
+              "idMenu": 39,
+              "idParent": 37,
+              "order": 200,
+              "title": "Offer",
+              "linkMethod": "Offer",
+              "level": "P",
+              "idMarket": 9,
+              "childs": [
+                {
+                  "idMenu": 81,
+                  "idParent": 39,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 159,
+                  "idParent": 39,
+                  "order": 100,
+                  "title": "OFFER_ADD_BLOCK",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 163,
+                  "idParent": 39,
+                  "order": 100,
+                  "title": "OFFER_REM_BLOQUE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 332,
+                  "idParent": 39,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 390,
+                  "idParent": 39,
+                  "order": 100,
+                  "title": "ACCEPT_OFFER",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 82,
+                  "idParent": 39,
+                  "order": 200,
+                  "title": "OFFER_SEND",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 106,
+                  "idParent": 39,
+                  "order": 300,
+                  "title": "OFFER_GEN_ALGORIT",
+                  "level": "B"
+                }
+              ]
+            },
+            {
+              "idMenu": 85,
+              "idParent": 37,
+              "order": 300,
+              "title": "Desg",
+              "linkMethod": "NominationDesg",
+              "level": "P",
+              "idMarket": 14,
+              "childs": [
+                {
+                  "idMenu": 93,
+                  "idParent": 85,
+                  "order": 100,
+                  "title": "OFFER_GEN_ALGORIT",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 94,
+                  "idParent": 85,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 95,
+                  "idParent": 85,
+                  "order": 100,
+                  "title": "OFFER_SEND",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 341,
+                  "idParent": 85,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                }
+              ]
+            },
+            {
+              "idMenu": 40,
+              "idParent": 37,
+              "order": 400,
+              "title": "OfferUpdate",
+              "linkMethod": "OfferUpdate",
+              "level": "P",
+              "idMarket": 13,
+              "childs": [
+                {
+                  "idMenu": 391,
+                  "idParent": 40,
+                  "order": 1,
+                  "title": "ACCEPT_OFFER",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 83,
+                  "idParent": 40,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 160,
+                  "idParent": 40,
+                  "order": 100,
+                  "title": "OFFER_ADD_BLOCK",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 164,
+                  "idParent": 40,
+                  "order": 100,
+                  "title": "OFFER_REM_BLOQUE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 333,
+                  "idParent": 40,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 84,
+                  "idParent": 40,
+                  "order": 200,
+                  "title": "OFFER_SEND",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 107,
+                  "idParent": 40,
+                  "order": 300,
+                  "title": "OFFER_GEN_ALGORIT",
+                  "level": "B"
+                }
+              ]
+            },
+            {
+              "idMenu": 108,
+              "idParent": 37,
+              "order": 500,
+              "title": "ACTRRTTDesg",
+              "linkMethod": "ACTRRTTDesg",
+              "level": "P",
+              "idMarket": 20,
+              "childs": [
+                {
+                  "idMenu": 109,
+                  "idParent": 108,
+                  "order": 100,
+                  "title": "OFFER_GEN_ALGORIT",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 110,
+                  "idParent": 108,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 111,
+                  "idParent": 108,
+                  "order": 100,
+                  "title": "OFFER_SEND",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 343,
+                  "idParent": 108,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "idMenu": 511,
+          "idParent": 13,
+          "order": 71,
+          "title": "SecReserve",
+          "linkMethod": "SecReserve",
+          "level": "O",
+          "idMarket": 27,
+          "childs": [
+            {
+              "idMenu": 512,
+              "idParent": 511,
+              "order": 100,
+              "title": "OfferRes",
+              "linkMethod": "Offer",
+              "level": "P",
+              "idMarket": 27,
+              "childs": [
+                {
+                  "idMenu": 516,
+                  "idParent": 512,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "linkMethod": "OFFER_NEW",
+                  "level": "B",
+                  "idMarket": 27
+                },
+                {
+                  "idMenu": 517,
+                  "idParent": 512,
+                  "order": 100,
+                  "title": "OFFER_REM_BLOQUE",
+                  "linkMethod": "OFFER_REM_BLOQUE",
+                  "level": "B",
+                  "idMarket": 27
+                },
+                {
+                  "idMenu": 518,
+                  "idParent": 512,
+                  "order": 100,
+                  "title": "OFFER_ADD_BLOCK",
+                  "linkMethod": "OFFER_ADD_BLOCK",
+                  "level": "B",
+                  "idMarket": 27
+                },
+                {
+                  "idMenu": 519,
+                  "idParent": 512,
+                  "order": 100,
+                  "title": "OFFER_SEND",
+                  "linkMethod": "OFFER_SEND",
+                  "level": "B",
+                  "idMarket": 27
+                },
+                {
+                  "idMenu": 520,
+                  "idParent": 512,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "linkMethod": "ADD_FILE",
+                  "level": "B",
+                  "idMarket": 27
+                },
+                {
+                  "idMenu": 521,
+                  "idParent": 512,
+                  "order": 100,
+                  "title": "ACCEPT_OFFER",
+                  "level": "B",
+                  "idMarket": 27
+                }
+              ]
+            },
+            {
+              "idMenu": 513,
+              "idParent": 511,
+              "order": 110,
+              "title": "OfferChild",
+              "linkMethod": "OfferSecondaryReserve",
+              "level": "P",
+              "idMarket": 27,
+              "childs": [
+                {
+                  "idMenu": 522,
+                  "idParent": 513,
+                  "order": 1,
+                  "title": "OFFER_SECONDARY_ADD_FILE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 523,
+                  "idParent": 513,
+                  "order": 1,
+                  "title": "OFFER_SECONDARY_SAVE",
+                  "level": "B"
+                }
+              ]
+            },
+            {
+              "idMenu": 514,
+              "idParent": 511,
+              "order": 200,
+              "title": "DesgRes",
+              "linkMethod": "NominationDesg",
+              "level": "P",
+              "idMarket": 28,
+              "childs": [
+                {
+                  "idMenu": 524,
+                  "idParent": 514,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "linkMethod": "OFFER_NEW",
+                  "level": "B",
+                  "idMarket": 28
+                },
+                {
+                  "idMenu": 525,
+                  "idParent": 514,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "linkMethod": "ADD_FILE",
+                  "level": "B",
+                  "idMarket": 28
+                },
+                {
+                  "idMenu": 526,
+                  "idParent": 514,
+                  "order": 100,
+                  "title": "OFFER_GEN_ALGORIT",
+                  "linkMethod": "OFFER_GEN_ALGORIT",
+                  "level": "B",
+                  "idMarket": 28
+                }
+              ]
+            },
+            {
+              "idMenu": 515,
+              "idParent": 511,
+              "order": 300,
+              "title": "OfferEnergy",
+              "linkMethod": "Offer",
+              "level": "P",
+              "idMarket": 29,
+              "childs": [
+                {
+                  "idMenu": 527,
+                  "idParent": 515,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "linkMethod": "ADD_FILE",
+                  "level": "B",
+                  "idMarket": 29
+                },
+                {
+                  "idMenu": 528,
+                  "idParent": 515,
+                  "order": 100,
+                  "title": "OFFER_SEND",
+                  "linkMethod": "OFFER_SEND",
+                  "level": "B",
+                  "idMarket": 27
+                },
+                {
+                  "idMenu": 529,
+                  "idParent": 515,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "linkMethod": "OFFER_NEW",
+                  "level": "B",
+                  "idMarket": 29
+                },
+                {
+                  "idMenu": 530,
+                  "idParent": 515,
+                  "order": 100,
+                  "title": "OFFER_ADD_BLOCK",
+                  "linkMethod": "OFFER_ADD_BLOCK",
+                  "level": "B",
+                  "idMarket": 29
+                },
+                {
+                  "idMenu": 531,
+                  "idParent": 515,
+                  "order": 100,
+                  "title": "OFFER_REM_BLOQUE",
+                  "linkMethod": "OFFER_REM_BLOQUE",
+                  "level": "B",
+                  "idMarket": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "idMenu": 45,
+          "idParent": 13,
+          "order": 80,
+          "title": "TerRegulation",
+          "linkMethod": "TerRegulation",
+          "level": "O",
+          "idMarket": 5,
+          "childs": [
+            {
+              "idMenu": 46,
+              "idParent": 45,
+              "order": 100,
+              "title": "Configuration",
+              "linkMethod": "ConfigurationRestriction",
+              "level": "P",
+              "idMarket": 5,
+              "childs": [
+                {
+                  "idMenu": 393,
+                  "idParent": 46,
+                  "order": 1,
+                  "title": "ACCEPT_OFFER",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 136,
+                  "idParent": 46,
+                  "order": 100,
+                  "title": "ADD_CONF_REST",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 180,
+                  "idParent": 46,
+                  "order": 100,
+                  "title": "CONF_SAVE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 336,
+                  "idParent": 46,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                }
+              ]
+            },
+            {
+              "idMenu": 47,
+              "idParent": 45,
+              "order": 200,
+              "title": "Offer",
+              "linkMethod": "Offer",
+              "level": "P",
+              "idMarket": 5,
+              "childs": [
+                {
+                  "idMenu": 394,
+                  "idParent": 47,
+                  "order": 1,
+                  "title": "ACCEPT_OFFER",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 86,
+                  "idParent": 47,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 87,
+                  "idParent": 47,
+                  "order": 100,
+                  "title": "OFFER_SEND",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 88,
+                  "idParent": 47,
+                  "order": 100,
+                  "title": "OFFER_GEN_ALGORIT",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 162,
+                  "idParent": 47,
+                  "order": 100,
+                  "title": "OFFER_ADD_BLOCK",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 166,
+                  "idParent": 47,
+                  "order": 100,
+                  "title": "OFFER_REM_BLOQUE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 337,
+                  "idParent": 47,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                }
+              ]
+            },
+            {
+              "idMenu": 89,
+              "idParent": 45,
+              "order": 300,
+              "title": "Desg",
+              "linkMethod": "NominationDesg",
+              "level": "P",
+              "idMarket": 15,
+              "childs": [
+                {
+                  "idMenu": 90,
+                  "idParent": 89,
+                  "order": 100,
+                  "title": "OFFER_GEN_ALGORIT",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 91,
+                  "idParent": 89,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 92,
+                  "idParent": 89,
+                  "order": 100,
+                  "title": "OFFER_SEND",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 342,
+                  "idParent": 89,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "idMenu": 48,
+          "idParent": 13,
+          "order": 90,
+          "title": "TERRE",
+          "linkMethod": "Desvios",
+          "level": "O",
+          "idMarket": 10,
+          "childs": [
+            {
+              "idMenu": 49,
+              "idParent": 48,
+              "order": 100,
+              "title": "Configuration",
+              "linkMethod": "ConfigurationRestriction",
+              "level": "P",
+              "idMarket": 10,
+              "childs": [
+                {
+                  "idMenu": 396,
+                  "idParent": 49,
+                  "order": 1,
+                  "title": "ACCEPT_OFFER",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 132,
+                  "idParent": 49,
+                  "order": 100,
+                  "title": "OFFER_SEND",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 133,
+                  "idParent": 49,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 181,
+                  "idParent": 49,
+                  "order": 100,
+                  "title": "CONF_SAVE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 338,
+                  "idParent": 49,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                }
+              ]
+            },
+            {
+              "idMenu": 50,
+              "idParent": 48,
+              "order": 200,
+              "title": "Offer",
+              "linkMethod": "Offer",
+              "level": "P",
+              "idMarket": 10,
+              "childs": [
+                {
+                  "idMenu": 397,
+                  "idParent": 50,
+                  "order": 1,
+                  "title": "ACCEPT_OFFER",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 134,
+                  "idParent": 50,
+                  "order": 100,
+                  "title": "OFFER_SEND",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 135,
+                  "idParent": 50,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 137,
+                  "idParent": 50,
+                  "order": 100,
+                  "title": "OFFER_GEN_ALGORIT",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 203,
+                  "idParent": 50,
+                  "order": 100,
+                  "title": "OFFER_ADD_BLOCK",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 204,
+                  "idParent": 50,
+                  "order": 100,
+                  "title": "OFFER_REM_BLOQUE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 339,
+                  "idParent": 50,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                }
+              ]
+            },
+            {
+              "idMenu": 199,
+              "idParent": 48,
+              "order": 300,
+              "title": "Desg",
+              "linkMethod": "NominationDesg",
+              "level": "P",
+              "idMarket": 19,
+              "childs": [
+                {
+                  "idMenu": 200,
+                  "idParent": 199,
+                  "order": 100,
+                  "title": "OFFER_SEND",
+                  "level": "B",
+                  "idMarket": 19
+                },
+                {
+                  "idMenu": 201,
+                  "idParent": 199,
+                  "order": 100,
+                  "title": "OFFER_NEW",
+                  "level": "B",
+                  "idMarket": 19
+                },
+                {
+                  "idMenu": 202,
+                  "idParent": 199,
+                  "order": 100,
+                  "title": "OFFER_GEN_ALGORIT",
+                  "level": "B",
+                  "idMarket": 19
+                },
+                {
+                  "idMenu": 345,
+                  "idParent": 199,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "idMenu": 307,
+          "idParent": 13,
+          "order": 110,
+          "title": "Prices",
+          "level": "O",
+          "childs": [
+            {
+              "idMenu": 308,
+              "idParent": 307,
+              "order": 200,
+              "title": "PriceManagementA",
+              "linkMethod": "PriceManagementA",
+              "level": "P",
+              "childs": [
+                {
+                  "idMenu": 351,
+                  "idParent": 308,
+                  "order": 100,
+                  "title": "ADD_FILE",
+                  "level": "B"
+                },
+                {
+                  "idMenu": 360,
+                  "idParent": 308,
+                  "order": 100,
+                  "title": "SAVE_PRICES",
+                  "level": "B"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "idMenu": 51,
+      "idParent": 0,
+      "order": 2,
+      "title": "COMUNICATIONS",
+      "level": "M",
+      "icon": "broadcast",
+      "childs": [
+        {
+          "idMenu": 52,
+          "idParent": 51,
+          "order": 10,
+          "title": "Monitoring",
+          "linkMethod": "Monitoring",
+          "level": "P",
+          "icon": "central-point"
+        },
+        {
+          "idMenu": 53,
+          "idParent": 51,
+          "order": 20,
+          "title": "DownloadLoad",
+          "linkMethod": "DownloadLoad",
+          "level": "P",
+          "icon": "central-point",
+          "childs": [
+            {
+              "idMenu": 205,
+              "idParent": 53,
+              "order": 100,
+              "title": "ADD_FILE",
+              "level": "B"
+            }
+          ]
+        },
+        {
+          "idMenu": 54,
+          "idParent": 51,
+          "order": 30,
+          "title": "AutomaticSending",
+          "linkMethod": "AutomaticSending",
+          "level": "P",
+          "icon": "central-point",
+          "childs": [
+            {
+              "idMenu": 206,
+              "idParent": 54,
+              "order": 100,
+              "title": "ADD_REG",
+              "level": "B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "idMenu": 116,
+      "idParent": 0,
+      "order": 3,
+      "title": "REPORT",
+      "level": "M",
+      "icon": "file",
+      "childs": [
+        {
+          "idMenu": 117,
+          "idParent": 116,
+          "order": 10,
+          "title": "Reporting",
+          "linkMethod": "Reporting",
+          "level": "P",
+          "childs": [
+            {
+              "idMenu": 118,
+              "idParent": 117,
+              "order": 100,
+              "title": "DOWNLOAD",
+              "level": "B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "idMenu": 286,
+      "idParent": 0,
+      "order": 4,
+      "title": "SETTLEMENT",
+      "level": "M",
+      "icon": "bill",
+      "childs": [
+        {
+          "idMenu": 288,
+          "idParent": 286,
+          "order": 9,
+          "title": "ManualSettlement",
+          "linkMethod": "ManualSettlement",
+          "level": "O",
+          "childs": [
+            {
+              "idMenu": 407,
+              "idParent": 288,
+              "order": 100,
+              "title": "SegmentCalculation",
+              "linkMethod": "SegmentCalculation",
+              "level": "P"
+            },
+            {
+              "idMenu": 426,
+              "idParent": 288,
+              "order": 200,
+              "title": "SegmentStatus",
+              "linkMethod": "SegmentStatus",
+              "level": "P"
+            }
+          ]
+        },
+        {
+          "idMenu": 287,
+          "idParent": 286,
+          "order": 10,
+          "title": "SettlementInquiries",
+          "linkMethod": "SettlementInquiries",
+          "level": "O",
+          "childs": [
+            {
+              "idMenu": 406,
+              "idParent": 287,
+              "order": 100,
+              "title": "SettlementComparison",
+              "linkMethod": "SettlementComparison",
+              "level": "P"
+            },
+            {
+              "idMenu": 449,
+              "idParent": 287,
+              "order": 200,
+              "title": "CheckBackOffice",
+              "linkMethod": "CheckBackOffice",
+              "level": "P"
+            }
+          ]
+        },
+        {
+          "idMenu": 711,
+          "idParent": 286,
+          "order": 10,
+          "title": "SendingInvoices",
+          "linkMethod": "SendingInvoices",
+          "level": "P",
+          "childs": [
+            {
+              "idMenu": 712,
+              "idParent": 711,
+              "order": 100,
+              "title": "SapManagement",
+              "linkMethod": "SapManagement",
+              "level": "P"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
