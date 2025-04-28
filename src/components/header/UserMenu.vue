@@ -72,3 +72,8 @@
     </span>
   </ods-dialog>
 </template>
+<script setup>
+import UserService from '@/services/UserService'
+
+// UserService.getUserProfile(12)
+</script>

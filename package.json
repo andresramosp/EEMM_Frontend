@@ -14,7 +14,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@azure/msal-browser": "^4.11.0",
     "@ods/ods-plus": "^1.1.12",
+    "axios": "^1.9.0",
     "pinia": "^3.0.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"

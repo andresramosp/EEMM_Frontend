@@ -1,8 +1,9 @@
 // stores/menuStore.ts
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
-import navigationConfig from '../assets/navigation_backend.json'
 import { transformMenu } from '../utils/menu'
+import ProfilesService from '@/services/ProfilesService'
+import UserService from '@/services/UserService'
 
 export const useMenuStore = defineStore('menu', () => {
   // Versión original del menú traído desde backend
@@ -13,12 +14,14 @@ export const useMenuStore = defineStore('menu', () => {
   const menuOptions = ref([])
 
   const fetchMenu = async () => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        setMenuItems(navigationConfig.data)
-        resolve()
-      }, 2000)
-    })
+    try {
+      const response = await UserService.getMenuByProfiles('ES', [1])
+      const items = response.data || []
+
+      setMenuItems(items)
+    } catch (error) {
+      console.error('Error al cargar el menú:', error)
+    }
   }
 
   const setMenuItems = (items) => {
