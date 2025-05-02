@@ -1,4 +1,6 @@
-import { api } from './api'
+import { api as realApi } from './api'
+
+const api = realApi
 
 const ProfilesService = {
   async getPermissionsByProfile(idUser) {

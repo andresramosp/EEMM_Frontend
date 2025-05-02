@@ -12,10 +12,17 @@
 
 <script lang="ts" setup>
 import HeaderContent from './components/header/HeaderContent.vue'
-import { useNavManager } from '@/composables/useNavManager'
+import { computed, onMounted } from 'vue'
+import { useMenuStore } from '@/stores/menu'
 
-const { navigation } = useNavManager()
+const menuStore = useMenuStore()
+const navigation = computed(() => menuStore.menuOptions)
+
+onMounted(() => {
+  menuStore.fetchMenu()
+})
 </script>
+
 <style>
 .ods-main {
   -webkit-box-flex: 1;

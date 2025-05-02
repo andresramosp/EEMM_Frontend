@@ -13,13 +13,13 @@
 <script setup>
 import { useRoute } from 'vue-router'
 import { computed } from 'vue'
-import { useNavManager } from '@/composables/useNavManager'
+import { useMenuStore } from '@/stores/menu'
 
-const { navigation } = useNavManager()
+const menuStore = useMenuStore()
 const route = useRoute()
 
 const breadcrumbTrail = computed(() => {
-  return findBreadcrumbTrail(route.name, navigation.value) || []
+  return findBreadcrumbTrail(route.name, menuStore.menuOptions) || []
 })
 
 /**

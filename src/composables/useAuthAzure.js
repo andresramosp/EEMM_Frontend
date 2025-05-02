@@ -2,7 +2,6 @@
 import { ref, computed } from 'vue'
 import { PublicClientApplication } from '@azure/msal-browser'
 import ProfilesService from '@/services/ProfilesService'
-import UserService from '@/services/UserService'
 import { useRoute } from 'vue-router'
 
 const token = ref(localStorage.getItem('azure-token') || '')
@@ -13,17 +12,6 @@ let msalInstance = null
 
 export const useAuthAzure = () => {
   // Obtener perfil
-  const getProfile = async () => {
-    if (!user.value) {
-      try {
-        const response = await UserService.getUserProfile(1)
-        user.value = response.data
-      } catch (error) {
-        console.error('Error obteniendo perfil:', error)
-      }
-    }
-    return user
-  }
 
   // Login con redirección de Azure
   const login = async () => {
@@ -89,7 +77,6 @@ export const useAuthAzure = () => {
     token,
     user,
     isLogged,
-    getProfile,
     login,
     autoLogin,
     logout,

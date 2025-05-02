@@ -1,6 +1,4 @@
-import type { NavigationData } from '@/composables/useNavManager'
-
-export const transformMenu = (items: any[]): { menu: NavigationData; buttons: any[] } => {
+export const transformMenu = (items: any[]): { menu: any; buttons: any[] } => {
   const buttons: any[] = []
 
   const transform = (item: any): any | null => {

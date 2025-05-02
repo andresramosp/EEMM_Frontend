@@ -17,6 +17,7 @@ export const useMenuStore = defineStore('menu', () => {
     try {
       const response = await UserService.getMenuByProfiles('ES', [1])
       const items = response.data || []
+      console.log(items)
 
       setMenuItems(items)
     } catch (error) {

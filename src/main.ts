@@ -28,12 +28,11 @@ router.isReady().then(async () => {
   const { autoLogin } = useAuthAzure()
 
   const currentPath = router.currentRoute.value.path
-
   const isLoginContraBD = currentPath.startsWith('/loginContraBD')
 
-  // if (!isLoginContraBD) {
-  //   await autoLogin()
-  // }
+  if (!isLoginContraBD) {
+    // await autoLogin()
+  }
 
   app.mount('#app')
 })

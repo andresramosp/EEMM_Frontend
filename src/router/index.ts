@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, type RouteLocationNormalized } from 'vue-router'
 import DashboardView from '../views/DashboardView.vue'
-import { useNavManager } from '@/composables/useNavManager'
+import { useNavManager } from '@/composables/useNavManager.js'
 import ProfileView from '@/views/ProfileView.vue'
 
 const router = createRouter({

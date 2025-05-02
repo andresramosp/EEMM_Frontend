@@ -1,202 +1,119 @@
-import { api } from './api'
+import { userServiceMockApi } from './__mocks__/UserServiceMocks'
+import { api as realApi } from './api'
+
+const USE_MOCKS = import.meta.env.VITE_USE_MOCKS === 'true'
+const api = USE_MOCKS ? userServiceMockApi : realApi
 
 const UserService = {
   async getProfiles() {
     const url = '/IngenSOM-admin-user/rest/permission/profilesList'
-    try {
-      return await api.get(url)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en getProfiles')
-    }
+    return api.get(url)
   },
 
   async getMenuByProfiles(country = 'ES', profiles) {
-    return {
-      data: await import('@/assets/navigation_backend.json').then((m) => m.default.data),
+    console.log('entra')
+    let url = `/IngenSOM-admin-user/rest/permission/menu?country=${country}`
+    if (profiles !== null) {
+      profiles.forEach((profile) => {
+        url += `&profilesList=${profile}`
+      })
     }
-
-    // let url = /IngenSOM-admin-user/rest/permission/menu?country=${country}
-    // if (profiles !== null) {
-    //   profiles.forEach((profile) => {
-    //     url += &profilesList=${profile}
-    //   })
-    // }
-    // try {
-    //   return await api.get(url)
-    // } catch (error) {
-    //   throw new Error(error.response?.data?.detail || 'Error en getMenuByProfiles')
-    // }
+    return api.get(url)
   },
 
   async getAllUsers() {
     const url = '/IngenSOM-UserManagement/rest/user/all'
-    try {
-      return await api.get(url)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en getAllUsers')
-    }
+    return api.get(url)
   },
 
   async getUserDetail(params) {
     const url = `/IngenSOM-UserManagement/rest/user/detail?userId=${params.userId}`
-    try {
-      return await api.get(url)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en getUserDetail')
-    }
+    return api.get(url)
   },
 
   async dismissUser(payload) {
     const url = '/IngenSOM-UserManagement/rest/attUsersProfiles'
-    try {
-      return await api.put(url, payload)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en dismissUser')
-    }
+    return api.put(url, payload)
   },
 
   async operationUsers(payload) {
     const url = '/IngenSOM-admin-user/rest/mock/user/activate'
-    try {
-      return await api.put(url, payload)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en operationUsers')
-    }
+    return api.put(url, payload)
   },
 
   async updateUserProfile(payload) {
     const url = '/IngenSOM-UserManagement/rest/attUpdateProfileUser'
-    try {
-      return await api.put(url, payload)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en updateUserProfile')
-    }
+    return api.put(url, payload)
   },
 
   async updateUser(payload) {
     const url = '/IngenSOM-UserManagement/rest/user'
-    try {
-      return await api.put(url, payload)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en updateUser')
-    }
+    return api.put(url, payload)
   },
 
   async newUser(payload) {
     const url = '/IngenSOM-UserManagement/rest/user'
-    try {
-      return await api.post(url, payload)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en newUser')
-    }
+    return api.post(url, payload)
   },
 
   async insertUser(payload) {
     const url = '/IngenSOM-UserManagement/rest/attInsertUser'
-    try {
-      return await api.put(url, payload)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en insertUser')
-    }
+    return api.put(url, payload)
   },
 
   async insertUserProfile(payload) {
     const url = `/IngenSOM-UserManagement/rest/user/profile?profileId=${payload.profileId}&startDate=${payload.startDate}&endDate=${payload.endDate}&userId=${payload.userId}`
-    try {
-      return await api.put(url)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en insertUserProfile')
-    }
+    return api.put(url)
   },
 
   async deletetUserProfile(payload) {
     const url = `/IngenSOM-UserManagement/rest/user/profile?profileId=${payload.profileId}&userId=${payload.userId}`
-    try {
-      return await api.delete(url)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en deletetUserProfile')
-    }
+    return api.delete(url)
   },
 
   async unsubscribeUser(params) {
     const url = `/IngenSOM-UserManagement/rest/user/unsubscribe?date=${params.date}&userId=${params.userId}`
-    try {
-      return await api.put(url)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en unsubscribeUser')
-    }
+    return api.put(url)
   },
 
   async updatePassword(params) {
     const url = `/IngenSOM-UserManagement/rest/user/password?newPassword=${params.newPassword}&oldPassword=${params.oldPassword}&repeatNewPassword=${params.repeatNewPassword}&userId=${params.userId}`
-    try {
-      return await api.put(url)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en updatePassword')
-    }
+    return api.put(url)
   },
 
   async enableDisable(params) {
     const url = `/IngenSOM-UserManagement/rest/user/enableDisable?enableDisable=${params.enableDisable}&userId=${params.userId}`
-    try {
-      return await api.put(url)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en enableDisable')
-    }
+    return api.put(url)
   },
 
   async getUsersProfiles() {
     const url = '/IngenSOM-UserManagement/rest/profile'
-    try {
-      return await api.get(url)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en getUsersProfiles')
-    }
+    return api.get(url)
   },
 
   async getAllProfiles() {
     const url = '/IngenSOM-admin-user/rest/profile'
-    try {
-      return await api.get(url)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en getAllProfiles')
-    }
+    return api.get(url)
   },
 
   async getUserProfile(idUser) {
     const url = `/IngenSOM-UserManagement/rest/user/profiles?userId=${idUser}`
-    try {
-      return await api.get(url)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en getUserProfile')
-    }
+    return api.get(url)
   },
 
   async getUserUpList(idUser) {
     const url = `/IngenSOM-UserManagement/rest/user/getUserUpList?userId=${idUser}`
-    try {
-      return await api.get(url)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en getUserUpList')
-    }
+    return api.get(url)
   },
 
   async postUfiUser(payload) {
     const url = `/IngenSOM-UserManagement/rest/user/postUfiUser?ufiId=${payload.ufis}&userId=${payload.userId}`
-    try {
-      return await api.post(url)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en postUfiUser')
-    }
+    return api.post(url)
   },
 
   async deleteUfiUser(payload) {
     const url = `/IngenSOM-UserManagement/rest/user/deleteUfiUser?ufiId=${payload.ufis}&userId=${payload.userId}`
-    try {
-      return await api.delete(url)
-    } catch (error) {
-      throw new Error(error.response?.data?.detail || 'Error en deleteUfiUser')
-    }
+    return api.delete(url)
   },
 }
 
